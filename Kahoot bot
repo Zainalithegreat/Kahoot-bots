@@ -1,0 +1,22 @@
+const puppeteer = require('puppeteer')
+
+
+const product_url = 'https://kahoot.it/';
+
+async function kahoot(){
+    var x = false
+    while(x == false){
+        const browser = await puppeteer.launch({headless: true});
+        const page = await browser.newPage();
+        await page.goto(product_url);
+        await page.type("input[id = 'game-input']" , '2732518')
+        await page.click("button[class = 'sc-jJEJSO diTFYV enter-pin-form__SubmitButton-sc-z047z0-1 haQHWh']")
+        await page.waitForNavigation()
+        await page.type("input[id = 'nickname']", 'hell')
+        await page.click("button[class = 'sc-jJEJSO diTFYV nickname-form__SubmitButton-sc-1mjq176-1 cuORIH']")
+        }
+    }
+
+kahoot();
+
+// in the terminal write npm init, npm install, npm install puppeteer
