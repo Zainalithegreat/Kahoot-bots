@@ -12,7 +12,7 @@ async function kahoot(){
         await page.type("input[id = 'game-input']" , '2732518')
         await page.click("button[class = 'sc-jJEJSO diTFYV enter-pin-form__SubmitButton-sc-z047z0-1 haQHWh']")
         await page.waitForNavigation()
-        await page.type("input[id = 'nickname']", 'hell')
+        await page.type("input[id = 'nickname']", 'hello')
         await page.click("button[class = 'sc-jJEJSO diTFYV nickname-form__SubmitButton-sc-1mjq176-1 cuORIH']")
         }
     }
